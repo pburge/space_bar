@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	<head>
+
+	<body>
+		<!-- Start main Container -->
+		<div class="container">
+
+			<!-- Begin Navigation -->
+			<div class="navbar navbar-inverse">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="logged_in.html">
+						<img src="img/icon.png">
+						Space Bar
+					</a>
+				</div>
+				
+				<div class="navbar-text navbar-left">
+					<a class='navbar-link' href="logged_products.html">Products</a>
+				</div>
+
+				<form class="navbar-form pull-right" style="margin-top: 0px; border-bottom-width: 0px; margin-bottom: 0px;">
+					<div class="form-group">
+						<p class="navbar-text navbar-right" style="margin-right: 15px">Signed in as <a href="#" id="logged_username" class="navbar-link"></a>
+					</div>
+					<div class="form-group">
+						<button id="logout_btn" type="submit" class="btn btn-primary">Log Out</button>
+					</div>
+				</form>
+			</div>
+			<!-- End Navigation -->
+
+			<div id='special_container'></div>
+
+			<h1 id='user_name'></h1>
+			<br>
+			<h4>Here, you may update your information:</h2>
+			<hr>
+				<div class="user-form">
+					<h4>First Name:
+						<input id='firstname' type='text' class="form-control">
+					</h4>
+					<h4>Last Name:
+						<input id='lastname' type='text' class="form-control">
+					</h4><br>
+
+					<h4>Email:<br><br>
+						<input type='text' id='orig_email' class="form-control" disabled>
+						<input type='text' id='updated_email' class="form-control" placeholder='enter your new email'>
+					</h4><br>
+
+					<h4>Password:<br><br>
+						<input type='password' id='orig_pass' class="form-control" placeholder='enter your old password to update'>
+						<input type='password' id='new_pass' class="form-control" placeholder='enter your new password'>
+					</h4>
+
+					<br>
+					<button id="info_update" type="submit" class="btn btn-success">Save</button>
+					<br><br>
+				</div>
+
+
+			<footer class='regfoot'>
+				<p>Paul Burge - SFW2 1402</p>
+			</footer>
+
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="js/noty/packaged/jquery.noty.packaged.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+
+	</div>
+	<!-- End main Container -->
+
+</body>
+
+</html>
